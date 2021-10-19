@@ -1,0 +1,32 @@
+<view style="position: sticky; top: 0; z-index: 999;">
+  <view class="bar_title"
+    style="display: flex; justify-content: space-between; align-items: center; padding: 0 20rpx;   background-color: #fff; width: 750rpx; height: 80rpx; z-index: 999; box-sizing: border-box;">
+    <view style="width: 180rpx;  display: flex; font-size: 28rpx; justify-content: center;"  wx:for="{{filterData}}" bindtap="onActive" data-index="{{index}}">
+      <text style="color: {{isActive[index]?'blue':''}};display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{options[index].length===0?item.text:options[index].length>1?item.text+'(多选)':options[index][0]}}</text>
+      <van-icon name="{{isActive[index]?'arrow-up':'arrow-down'}}" size="24rpx" color="{{isActive[index]?'blue':''}}"></van-icon>
+    </view>
+  </view>
+
+  <view hidden="{{!isActive[index]}}" class="filter_content" wx:for="{{filterData}}" wx:for-index="index" catchtap="closeMask">
+    <scroll-view catchtap="handleBubble" scroll-y style="background-color: #fff; width: 750rpx;  padding: 30rpx 40rpx; box-sizing: border-box;">
+      <view wx:for="{{item.child}}" wx:for-index="index2" wx:for-item="c_item">
+        <view style="font-weight: bold;">{{c_item.title}}选择：</view>
+        <view style="display: flex; flex-direction: row; flex-wrap: wrap;">
+          <view class="ct_tag" wx:for="{{c_item.childType}}" wx:for-item="ct_item" wx:for-index="index3" 
+          data-index1="{{index}}"
+          data-index2="{{index2}}"
+          data-index3="{{index3}}" catchtap="handleSelect"
+          style="color: {{ct_item.selected? 'blue':''}}; border: 2rpx solid {{ct_item.selected? 'blue':''}};">
+            {{ct_item.text}}
+          </view>
+        </view>
+        <view  style="display: flex; justify-content: space-around;">
+          <button data-index="{{index}}" size="mini" catchtap="clearFilter" disabled="{{ !isSelected? true: false}}">清除条件</button>
+          <button data-index="{{index}}" size="mini" catchtap="confirmFilter">确定</button>
+        </view>
+      </view>
+
+    </scroll-view>
+  </view>
+
+</view>

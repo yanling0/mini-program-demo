@@ -1,0 +1,39 @@
+<view
+  style="display: flex; align-items: center; border: 1px solid gray; width: 600rpx; height: 80rpx; padding-left: 20rpx;">
+  <view>
+    <mp-icon icon="lock" size="{{20}}" color="black"></mp-icon>
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <input bindinput="getPassword" model:value="{{oldPassword}}" password class="weui-input" placeholder="请输入原密码"
+      placeholder-style="font-size: 28rpx; color: #ccc" />
+  </view>
+</view>
+<view
+  style="display: flex; align-items: center; border: 1px solid gray; width: 600rpx; height: 80rpx; padding-left: 20rpx;">
+  <view>
+    <mp-icon icon="lock" size="{{20}}" color="black"></mp-icon>
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <input bindinput="getNewPassword" model:value="{{newPassword}}" password class="weui-input" placeholder="请输入新密码"
+      placeholder-style="font-size: 28rpx; color: #ccc" />
+  </view>
+</view>
+<view class="tip" hidden="{{isValid}}">
+  <text>{{errorTip}}</text>
+</view>
+<view
+  style="display: flex; align-items: center; border: 1px solid gray; width: 600rpx; height: 80rpx; padding-left: 20rpx;">
+  <view>
+    <mp-icon icon="lock" size="{{20}}" color="black"></mp-icon>
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <input bindinput="getNewPasswordAgain" model:value="{{newPasswordAgain}}" password class="weui-input"
+      placeholder="请再次输入新密码" placeholder-style="font-size: 28rpx; color: #ccc" />
+  </view>
+</view>
+<view class="tip" hidden="{{isValid2}}">
+  <text>{{errorTip2}}</text>
+</view>
+<!-- <button type="primary" disabled="{{inputDisable}}" bindtap="modifyPassword">确定</button> -->
+<van-button type="info" size="large" disabled="{{inputDisable}}" bind:click="modifyPassword">确定</van-button>
+

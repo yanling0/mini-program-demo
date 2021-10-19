@@ -1,0 +1,10 @@
+<!--components/navbar/navbar.wxml-->
+<view style="position: sticky; top: 0; width: 750rpx; background-color: #fff; height: {{height * 2+20}}px; z-index: 9999; padding: 0 30rpx;">
+  <view style="display: flex; width: 400rpx; justify-content: space-around;  line-height: {{height * 2+40}}px; " >
+  <view style="flex: 1; position: relative; top: 10rpx;">
+    <van-icon name="user-circle-o" size="26px" />
+  </view>
+  
+  <text style="font-size: 26rpx;">智慧教育</text>
+  </view>
+</view>

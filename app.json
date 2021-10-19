@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/test/test",
+    "pages/index/index",
+    "pages/course_page/course",
+    "pages/buy_page/page/buy/buy",
+    "pages/disting/disting",
+    "pages/wash/wash",
+    "pages/my_page/my/my",
+    "components/card/card",
+    "pages/search_page/search",
+    "pages/buy_page/page/detail/detail",
+    "components/testCard/testCard",
+    "pages/buy_page/page/login/login"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#eeeeee",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "智慧教育",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "selectedColor": "#000000",
+    "color": "#bcbcbc",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/wash/wash",
+        "iconPath": "images/buy_no.png",
+        "selectedIconPath": "images/buy.png"
+      },
+      {
+        "text": "修改密码",
+        "pagePath": "pages/wash/wash",
+        "iconPath": "images/disting_no.png",
+        "selectedIconPath": "images/disting.png"
+      },
+      {
+        "text": "课程管理",
+        "pagePath": "pages/wash/wash",
+        "iconPath": "images/wash_no.png",
+        "selectedIconPath": "images/wash.png"
+      },
+      {
+        "text": "考勤",
+        "pagePath": "pages/my_page/my/my",
+        "iconPath": "images/my_no.png",
+        "selectedIconPath": "images/my.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "mp-icon": "weui-miniprogram/icon/icon",
+    "mp-searchbar": "weui-miniprogram/searchbar/searchbar",
+    "mp-toptips": "weui-miniprogram/toptips/toptips",
+    "van-button": "@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-collapse": "@vant/weapp/collapse/index",
+    "van-collapse-item": "@vant/weapp/collapse-item/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-goods-action": "@vant/weapp/goods-action/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-overlay": "@vant/weapp/overlay/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-circle": "@vant/weapp/circle/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

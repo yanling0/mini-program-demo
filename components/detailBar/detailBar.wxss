@@ -1,0 +1,14 @@
+/* components/detailBar/detailBar.wxss */
+.container{
+  width: 750rpx;
+  height: 220rpx;
+  background: #fff;
+  position: sticky;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+.bg-wh{
+  background-color: #fff;
+}
+

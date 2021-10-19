@@ -1,0 +1,36 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/disting/disting",
+          "pathName": "pages/disting/disting",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/buy_page/page/buy/buy",
+          "pathName": "pages/buy_page/page/buy/buy",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

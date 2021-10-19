@@ -1,0 +1,36 @@
+/* components/filterBar/filterBar.wxss */
+button{
+  background-color: rgb(38, 142, 240);
+}
+
+button::after{
+  border: none;
+}
+
+button:nth-of-type(1) {
+  color: rgb(38, 142, 240);
+  background-color: #fff;
+}
+button:nth-of-type(2) {
+  background-color: rgb(38, 142, 240);
+  border-radius: 0%;
+  width: 140rpx;
+  color: #fff;
+}
+
+.ct_tag{
+  font-size: 24rpx;
+  padding: 5rpx 30rpx;
+  margin: 15rpx;
+  border: 2rpx solid #ccc;
+  background-color: #eee;
+  border-radius: 30rpx;
+  color: #bbb;
+}
+
+.filter_content {
+  position: absolute;
+  overflow: hidden;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.308);
+}

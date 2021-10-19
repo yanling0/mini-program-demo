@@ -1,0 +1,14 @@
+<view class="page">
+  <view class="tabs" style="position: relative;">
+    <view class="tab-content">
+      <view wx:if="{{currentTabIndex===0}}" class="d-flex-row"
+        style="position:relative;flex-wrap: wrap; height: auto; background-color: #eee; padding-top: 10rpx;">
+        <test-card courseId="{{65645}}" courseName="高等数学进阶课程哇卡哇卡" iconName="{{iconName}}" bindchangesigninstatus="onChangeSigninStatus"></test-card>
+        <test-card courseName="大学恋爱人际关系巴拉巴拉小魔仙" iconName="{{iconName}}" bindchangesigninstatus="onChangeSigninStatus"></test-card>
+      </view>
+      <view wx:if="{{currentTabIndex===1}}" class="d-flex-row"
+        style="position:relative;top:90rpx;flex-wrap: wrap; height: auto; background-color: #eee; padding-top: 10rpx;">
+      </view>
+    </view>
+  </view>
+</view>

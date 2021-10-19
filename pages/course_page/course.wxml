@@ -1,0 +1,46 @@
+<view style="box-sizing: border-box; height: calc(100vh + 30); background-color: #eee; ">
+  <!-- 筛选条
+  <view class="bar" style="width: 750rpx; height: 80rpx; z-index: 999;">
+    <view wx:for="{{filterData}}" wx:key="id" data-index="{{index}}" bindtap="filterTab">
+      <view class="filter_title" style="display: flex;">
+        <text style="color: {{item.active? 'blue': '#000'}};">{{filterTitle?filterTitle:item.text}}</text>
+        <view class="icon">
+          <van-icon name="arrow-up" color="blue" size="24rpx" wx:if="{{item.active}}" />
+          <van-icon name="arrow-down" size="24rpx" wx:else />
+        </view>
+      </view>
+    </view>
+  </view>
+  筛选条件框  -->
+
+  <!-- <view class="filter_content" wx:for="{{filterData}}" hidden="{{!item.active}}" wx:for-index="index1" wx:key="id">
+    <scroll-view scroll-y class="scroll">
+      <view style="display: flex; flex-direction: column;" wx:for="{{item.child}}" wx:for-item="item_child"
+        wx:for-index="index2" wx:key="id">
+        <text class="title" style="font-weight: bold; margin-left: 30rpx;">{{item_child.title}}选择:</text>
+        <view class="option_card">
+          <view class="option {{item_childType.selected?'active':''}}" bindtap="selectOption"
+            wx:for="{{item_child.childType}}" wx:for-item="item_childType" wx:for-index="index3" wx:key="id"
+            data-index1="{{index1}}" data-index2="{{index2}}" data-index3="{{index3}}">{{item_childType.text}}</view>
+        </view>
+      </view> -->
+      <!-- 按钮 -->
+      <!-- <view style="display: flex; justify-content: space-between; margin: 0 30rpx;">
+        <text data-index1="{{index1}}" class="clear" bindtap="clearFilter"
+          style="color: {{isFilter[index1]?'blue':'#ccc'}};">清空条件</text>
+        <view class="submit" bindtap="confirmFilter">确定</view>
+      </view>
+    </scroll-view>
+  </view> -->
+
+  <!-- 筛选条 -->
+  <filter-bar></filter-bar>
+
+  <!-- 课程卡片 -->
+  <course-card isExist="{{isExist}}" bindhandleaddorremove="handleAddOrRemove" wx:for="{{5}}"></course-card>
+  <view style="margin-bottom: 40rpx;"></view>
+
+  <!-- 底部选课预览 -->
+  <detail-bar></detail-bar>
+  
+</view>

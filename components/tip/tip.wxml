@@ -1,0 +1,7 @@
+<view style="font-size: 26rpx; width: 750rpx; height: 80rpx; display: flex; justify-content: center; align-items: center; background-color: wheat; position: sticky; top: 0;  box-sizing: border-box;">
+  <view>
+    <mp-icon icon="error" color="orange" size="{{20}}" type="field"></mp-icon>
+  </view>
+  <text style="margin: 0 20rpx;">当前暂未登录,登陆后可体验完整功能</text>
+  <text style="color: blue;" bindtap="gotoLogin">立即登录</text>
+</view>
