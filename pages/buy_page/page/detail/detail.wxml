@@ -1,0 +1,4 @@
+<view class="page" style="width: 750rpx; height: 100vh; background: #eee;">
+  <bar idx="{{index}}"></bar>
+  <card></card>
+</view>

@@ -1,0 +1,18 @@
+<view style="width: 750rpx; height: 350rpx; background: #fff; box-sizing: border-box; padding: 30rpx;">
+  <view catchtap="gotoPage" class="box"
+    style=" width: 100%; height: 100%; background-color: thistle; font-weight: bold; font-size: 48rpx; position: relative;display: flex; align-items: center; justify-content: space-around;">
+    
+    <image style="width: 690rpx; height: 290rpx; position: absolute; z-index: 0;" mode="aspectFill"
+      src="https://images.pexels.com/photos/2113566/pexels-photo-2113566.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+    </image>
+
+    <view style="z-index: 1;">
+      <image src="../../images/buy.png" style="width: 150rpx; height: 150rpx;"></image>
+    </view>
+    <view style="z-index: 1;">
+      <view>{{name}}</view>
+      <view style="font-size: 32rpx;font-weight: normal;">sfdgd</view>
+    </view>
+
+  </view>
+</view>

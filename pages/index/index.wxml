@@ -1,0 +1,10 @@
+<view>
+  <navbar></navbar>
+  <view wx:if="{{!isLogin}}">
+    <tip></tip>
+  </view>
+  <index-card url="/pages/course_page/course" name="课程管理" isLogin="{{isLogin}}"></index-card>
+  <index-card name="智能考勤" isLogin="{{isLogin}}" url="/pages/buy_page/page/buy/buy"></index-card>
+  <index-card name="校园活动" isLogin="{{isLogin}}" url="/pages/disting/disting" ></index-card>
+  <index-card name="智慧图书馆" isLogin="{{isLogin}}"></index-card>
+</view>

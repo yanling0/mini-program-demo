@@ -1,0 +1,11 @@
+/* pages/buy_page/page/buy/buy.wxss */
+.page{
+  position: relative;
+}
+
+
+.active {
+  color: #000;
+}
+
+

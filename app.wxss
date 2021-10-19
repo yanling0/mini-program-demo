@@ -1,0 +1,22 @@
+@import './miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss';
+
+
+.sticky {
+  position: fixed;
+  padding: 20rpx;
+  top: 0;
+  z-index: 99;
+}
+
+.d-flex-row {
+  display: flex;
+}
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.light-gray {
+  background-color: #eeeeee;
+}
+

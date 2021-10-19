@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "tip": "/components/tip/tip",
+    "index-card": "/components/indexCard/indexCard",
+    "navbar": "/components/navbar/navbar"
+  },
+  
+  "navigationStyle": "custom"
+}

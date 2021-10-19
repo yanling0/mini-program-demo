@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "course-card": "/components/card/card",
+    "detail-bar": "/components/detailBar/detailBar",
+    "filter-bar": "/components/filterBar/filterBar"
+  }
+}

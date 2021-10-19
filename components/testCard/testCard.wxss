@@ -1,0 +1,7 @@
+/* components/testCard/testCard.wxss */
+.text-ellipsis{
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "info-card": "../../../../components/card/card",
+    "test-card": "../../../../components/testCard/testCard"
+  },
+	"enablePullDownRefresh": true
+
+}

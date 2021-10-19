@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@vant/weapp": "^1.9.1",
+    "weui-miniprogram": "^1.1.1"
+  },
+  "name": "miniprogramm-demo",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

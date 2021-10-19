@@ -1,0 +1,42 @@
+<view class="container">
+  <view class="card d-flex-column">
+  <!-- 卡片抬头 -->
+    <view class="course_title d-flex-row">
+      <view class="title">大学生思想政治教育</view>
+      <van-tag class="type" round color="pink" text-color="red">必修</van-tag>
+      <button data-isExist="{{isExist}}" bindtap="ontap" size="mini" type="primary" class="add_or_remove_btn" style="background-color: {{isExist?'#fff':'#2d98e4'}}; color: {{isExist?'#000':'#fff'}}; border: 0.5rpx solid {{isExist? '#000':'#2d98e4'}};">{{isExist?'移除':'添加'}}课表</button>
+    </view>
+
+  <!-- 卡片内容 -->
+  <view class="course_content d-flex-row">
+    <!-- 课程信息 -->
+    <view class="info d-flex-column flex-1">
+      <view class="d-flex-row mb-10" style="font-size: 26rpx; ">
+        <text style="color: #ccc;">时间：</text>
+        <text>周一 8：30-10：00</text>
+      </view>
+      <view class="d-flex-row mb-10" style="font-size: 26rpx;">
+        <text style="color: #ccc;">地址：</text>
+        <text>5号教学楼301室</text>
+      </view>
+      <view class="d-flex-row mb-10" style="font-size: 26rpx;">
+        <text style="color: #ccc;">学院：</text>
+        <text>公共管理学院</text>
+      </view>
+      <view class="d-flex-row mb-10" style="font-size: 26rpx;">
+        <text style="color: #ccc;">课时：</text>
+        <text>4</text>
+      </view>
+    </view>
+
+    <!-- 环形进度条 -->
+    <view style="position: relative; text-align: center;">
+      <van-circle clockwise="{{false}}"  value="20" layer-color="#eee"  size="75" stroke-width="6"></van-circle>
+      <view class="d-flex-column" style="position: absolute; top: 40%; left: 50%; transform: translate(-50%,-40%);">
+        <view><text style="color: #2d98e4;">3/</text><text style="color: #ccc;">30</text></view>
+        <text style="font-size: 18rpx; color: #ccc;">剩余名额</text>
+      </view>
+    </view>
+  </view>
+  </view>  
+</view>
